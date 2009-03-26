@@ -14,11 +14,9 @@ Installation
 ------------
 Just do this: 
 
-    for action in config setup install; do ruby setup.rb $action; end
-
-Or, if you prefer:
-
-    ruby -e '["config","setup","install"].each {|action| raise unless system "ruby setup.rb #{action}"}'
+    ruby setup.rb config
+    ruby setup.rb setup
+    sudo ruby setup.rb install
 
 
 Documentation
